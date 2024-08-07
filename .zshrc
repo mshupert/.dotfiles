@@ -19,13 +19,21 @@ zstyle ':omz:update' mode reminder  # remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(git zsh-autosuggestions sudo dirhistory)
 
-source $ZSH/oh-my-zsh.sh
 
-ZSH_CUSTOM=$HOME/.config/zsh
 
 # User configuration
 alias vim="nvim"
 alias v="nvim"
 
+ZSH_CUSTOM=$HOME/.config/zsh/
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source $ZSH/oh-my-zsh.sh
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/mshupert/.dart-cli-completion/zsh-config.zsh ]] && . /home/mshupert/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+

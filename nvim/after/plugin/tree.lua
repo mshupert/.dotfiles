@@ -27,13 +27,11 @@ require('nvim-tree').setup({
         enable = true,
         show_on_dirs = true,
     },
-    filters = {
-        dotfiles = true,
-    },
+    filters = {},
 })
 
 -- set keymaps
 vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>") 
-vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>")
+vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>")
 vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")
 vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")

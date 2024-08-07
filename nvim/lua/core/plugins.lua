@@ -20,14 +20,14 @@ require ("lazy").setup({
             'nvim-lua/plenary.nvim',
         }
     },
-    { 
+    {
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate',
         dependencies = {
             'windwp/nvim-ts-autotag',
         }
     },
-    { 
+    {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         dependencies = {
@@ -54,4 +54,5 @@ require ("lazy").setup({
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
     { 'nvim-tree/nvim-tree.lua' },
+    { 'tpope/vim-commentary' },
 })
