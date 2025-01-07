@@ -3,7 +3,7 @@ local lsp_zero = require('lsp-zero')
 -- mason integration and lsp list
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'html', 'cssls', 'lua_ls', 'pyright'},
+  ensure_installed = {'ts_ls', 'html', 'cssls', 'lua_ls', 'pyright'},
     handlers = {
         lsp_zero.default_setup,
         lua_ls = function()
